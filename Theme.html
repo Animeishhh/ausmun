@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commonwealth Camaraderie</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .header-background {
+            background-image: url('image2.jpg'); 
+            background-size: cover;
+            background-position: center;
+            position: relative;   
+        }
+        .background-pattern {
+            background-image: url('background1.jpg'); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+             opacity: 1;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Copperplate+Gothic+Light&display=swap');
+
+        body {
+            font-family: 'Copperplate Gothic Light', sans-serif;
+        }
+        .fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Optional: Adds a small slide effect */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+    
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="header-background h-96 flex items-center justify-center  text-white md:bg-cover ">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold fade-in ">Theme for AUSMUN India 2024</h1>
+        </div>
+    </header>
+    
+    <div class="bg-white py-10 px-4 md:px-10 ">
+
+        <div class="max-w-3xl mx-auto  bg-white p-8    background-pattern bg-opacity-0 text-center md:bg-cover fade-in">
+            <h2 class="text-3xl font-bold mb-6 text-center">Commonwealth Camaraderie</h2>
+
+            <div class="text-gray-700 space-y-6 text-center fade-in">
+
+               
+                <p>August 15, 1947 is one of the most significant dates in history. It was on this day that the dominion of India was declared an independent nation. Australia became the first country in the world to hoist the flag of independent India just seven hours after this declaration. And since then, the two nations have enjoyed an amicable relationship; however in the new world order - the amiability has to be extended, rethought and propagated.</p>
+                <p>Aussie-Indo relations date back to the pre-colonial times. What started as a trade partnership to facilitate the colonial white settlement, has since then blossomed into a diplomatic friendship with both countries not only forging political, economic and military ties; but also sharing a strong cultural connection with cinema, music and international sports like cricket and badminton. This gradual development of diplomatic, cultural, economic, and strategic ties over time has laid the foundation for a strong and enduring friendship with shared interests between the two nations. And one such shared interest includes education.</p>
+                <p>Since the independence of India, Australia has expressed its desire of having Indian students studying there. AUSMUN is an official partner of Australia Unlimited, a dynamic initiative by the Australian government aimed at showcasing the limitless potential and opportunities that Australia has to offer on the world stage. Australia Unlimited, which celebrates talented Australians in ausbiz, science, innovation, design, fashion, the arts and in humanitarian endeavors. This organization is a key one in extending <b>AZ-INDO</b> relationships.</p>
+                <p>Australia Unlimited embodies the spirit of innovation, diversity, and excellence that we strive to promote at our conference. Through this partnership, we aim to highlight Australia’s vibrant culture, world class education system, cutting-edge research, and thriving economy and overall, make Indian youngsters aware of the potential opportunities which are available for just their taking.</p>
+                <p>Here at AUSMUN, we advocate for global engagement and academic excellence. AUSMUN aspires to be an emblem of change, empowerment and diplomacy.</p>
+                <p>As delegates engage in the stimulating debates and deliberations at AUSMUN, we encourage them to seize the opportunity to explore the vast potential for collaboration and partnership between our two countries. Whether it be in the realms of education, research, innovation, or trade, there are endless possibilities for synergy and mutual benefit waiting to be explored.</p>
+            </div>
+        </div>
+</div>
+<script>
+  window.addEventListener('scroll', function() {
+    const fadeInElements = document.querySelectorAll('.fade-in');
+  
+    fadeInElements.forEach(element => {
+      const rect = element.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        element.classList.add('visible');
+      } else {
+        element.classList.remove('visible'); // Optional: to hide again when scrolling up
+      }
+    });
+  });
+</script>
